@@ -1,0 +1,7 @@
+node_modules/
+.idea
+.DS_Store
+id_rsa_github
+id_rsa_github.pub
+addkey.sh
+refactor
