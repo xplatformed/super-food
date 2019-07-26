@@ -21,11 +21,11 @@ This app runs off of a MongoDB Database. Whether you have Mongo running locally 
 
 First run the install command to fetch all the dependency packages listed in the project's package.json file.
 
-npm install
+* npm install
 
-Then run the application
+* Then run the application
 
-npm run start
+* npm run start
 
 Please make sure you have MongoDB server running either locally or in production.
 
@@ -34,13 +34,13 @@ Please make sure you have MongoDB server running either locally or in production
 <p> To add superfood data to the running mongoDB database
 run the following command:
 
-npm run populate
+>npm run populate
 
 After you have run the above command you will see the superfood data displayed in your terminal/console window.
 
 Once data has been added to the MongoDB database run following command:
 
-npm run start
+>npm run start
 
 to re-run the server.
 </p>
@@ -73,7 +73,7 @@ In postman you can create and test the following routes:
 
 <p> To run tests run following command:
 
-npm run tests
+>npm run tests
 
 </p>
 
@@ -81,6 +81,6 @@ npm run tests
 
 <p> All documentation for methods and functions can be found in:
 
-docs
+>docs
 
 Please note: open the docs .html files in browser  </p>
