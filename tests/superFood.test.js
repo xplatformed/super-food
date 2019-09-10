@@ -161,7 +161,7 @@ describe('DELETE /superfoods/:id', () => {
   it('should return 404 if super food item not found', (done) => {
     const hexId = new ObjectID().toHexString();
     request(app)
-      .delete(`/superfood/${hexId}`)
+      .delete(`/superfoods/${hexId}`)
       .expect(404)
       .end(done);
   });
@@ -191,18 +191,17 @@ describe('PATCH /superfoods/:id', () => {
       .end(done);
   });
 
-  it('should return 404 if object id not valid', (done) => {
-    const hexId = new ObjectID().toHexString();
+  // it('should return 404 if object id not valid', (done) => {
+  //   const hexId = new ObjectID().toHexString();
+  //   request(app)
+  //     .patch(`/superfoods/${hexId}`)
+  //     .expect(404)
+  //     .end(done);
+  // });
+  it('should return 404 if object id is invalid', (done) => {
     request(app)
-      .patch(`/superfood/${hexId}`)
+      .patch('/superfoods/545teyr')
       .expect(404)
       .end(done);
   });
-//     it('should return 404 if object id is invalid', (done) => {
-//         request(app)
-//             .delete('/superfoods/545')
-//             .expect(404)
-//             .end(done);
-//     });
 });
-
