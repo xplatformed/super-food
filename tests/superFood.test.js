@@ -140,7 +140,7 @@ describe('GET /superfoods/:id', () => {
 
 describe('DELETE /superfoods/:id', () => {
   it('should remove a super food item', (done) => {
-    const hexId = superfoods[1]._id.toHexString();
+    const hexId = superfoods[0]._id.toHexString();
     request(app)
       .delete(`/superfoods/${hexId}`)
       .expect(200)
@@ -205,3 +205,4 @@ describe('PATCH /superfoods/:id', () => {
 //             .end(done);
 //     });
 });
+

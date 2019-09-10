@@ -111,7 +111,7 @@ exports.delete = (req, res) => {
     });
   }
 
-  SuperFood.findOneAndDelete({ _id: id }).then((superfood) => {
+  SuperFood.findOneAndDelete(id).then((superfood) => {
     if (!superfood) {
       return res.status(404).send({
         message: `Cannot find super food item with id ${req.params.id}`
