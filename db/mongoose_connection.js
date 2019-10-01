@@ -1,10 +1,8 @@
 const mongoose = require('mongoose');
 
-const mongoDB = process.env.MONGODB_URI || process.env.MONGO_URI || 'mongodb://localhost:27017/superfoods';
-
 mongoose.Promise = global.Promise;
 
-mongoose.connect(mongoDB, { useNewUrlParser: true, useCreateIndex: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useCreateIndex: true });
 
 mongoose.set('useFindAndModify', false);
 
