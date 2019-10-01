@@ -2,7 +2,8 @@ module.exports = {
     "env": {
         "browser": true,
         "commonjs": true,
-        "es6": true
+        "es6": true,
+        mocha: true
     },
     "extends": "airbnb-base",
     "globals": {
@@ -13,7 +14,8 @@ module.exports = {
         "ecmaVersion": 2018
     },
     "rules": {
-        "comma-dangle": ["error", "never"]
+        "comma-dangle": ["error", "never"],
+        "no-underscore-dangle": 'off'
     }
 
 };
