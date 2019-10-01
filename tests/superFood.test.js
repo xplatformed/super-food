@@ -27,9 +27,8 @@ const superfoods = [
 
 // testing lifecycle method .. in case superfood already exists in test database
 beforeEach((done) => {
-  SuperFood.deleteMany({})
-    .then(() => SuperFood.insertMany(superfoods) // populate test db
-    )
+  SuperFood.deleteMany({}) // remove documents from db
+    .then(() => SuperFood.insertMany(superfoods)) // populate test db
     .then(() => done());
 });
 
