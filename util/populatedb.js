@@ -13,6 +13,7 @@ if (!userArgs[0].startsWith('mongodb')) {
 }
 */
 const async = require('async');
+require('../config/config');
 // const mongoose = require('mongoose');
 const { mongoose } = require('../db/mongoose_connection');
 const { SuperFood } = require('../models/superFood.model');
