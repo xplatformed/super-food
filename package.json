@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
-    "test": "mocha tests",
     "start": "node app.js",
+    "test": "export NODE_ENV=test || SET NODE_ENV=test && mocha **/*.test.js",
     "populate": "node ./util/populatedb mongodb://localhost:27017/superfoods"
   },
   "keywords": [],
