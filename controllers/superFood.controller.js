@@ -148,7 +148,7 @@ exports.update = (req, res) => {
     });
   }
 
-  SuperFood.findOneAndUpdate({ _id: id },
+  SuperFood.findOneAndUpdate(id,
     { $set: body }, { new: true })
     .then((superfood) => {
       if (!superfood) {
